@@ -34,7 +34,12 @@ import org.springframework.test.web.servlet.MockMvc;
 @SpringBootTest
 @AutoConfigureMockMvc
 public class GreetingControllerTests {
+	
+	/*
+	@Autowired: Injeta dependências automaticamente.
 
+MockMvc: Simula requisições HTTP e respostas para testar controladores.
+	*\
 	@Autowired
 	private MockMvc mockMvc;
 
