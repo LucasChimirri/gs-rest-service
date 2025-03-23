@@ -49,6 +49,7 @@ MockMvc: Simula requisições HTTP e respostas para testar controladores.
 		this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
 				.andExpect(jsonPath("$.content").value("Hello, World!"));
 	}
+	/*Nome do método de teste que verifica se uma saudação personalizada é retornada*/
 
 	@Test
 	public void paramGreetingShouldReturnTailoredMessage() throws Exception {
@@ -57,5 +58,5 @@ MockMvc: Simula requisições HTTP e respostas para testar controladores.
 				.andDo(print()).andExpect(status().isOk())
 				.andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
 	}
-
+/* teste que garante que o "greeting" retorne uma saudação personalizada com base no parâmetro enviado*/
 }
